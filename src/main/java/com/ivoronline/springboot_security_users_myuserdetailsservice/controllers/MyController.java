@@ -11,8 +11,8 @@ public class MyController {
   // HELLO (Secured Resource)
   //==============================================================================
   @Secured("ROLE_USER")
-  @RequestMapping("/Hello")
-  public String hello() {
+  @RequestMapping("Hello")
+   String hello() {
     return "Hello from Controller";
   }
 
